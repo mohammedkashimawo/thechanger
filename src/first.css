@@ -32,7 +32,7 @@
     top: 25vh;
     left: 5vw;
     background-color: none;
-    border: 1px white solid;
+    border: 0px white solid;
     width: 40%;
     height: 40vh;
   }
@@ -42,4 +42,9 @@
     font-size: 30px;
     font-weight: bolder;
   }
-  #div1 #d
+  #div1 #div1a #spanB {
+    font-family: "Karla", sans-serif;
+    color: white;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=first.css.map */

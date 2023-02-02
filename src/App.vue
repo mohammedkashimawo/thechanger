@@ -4,7 +4,7 @@
 
       <div id="div1a">
         <span class="spanA">I am <u style="font-weight:bolder;text-decoration: underline;text-decoration-color: darkolivegreen;text-decoration-thickness: 3px;"> Mohammed Ikechukwu Olamide</u></span>
-      <br>
+      <br><br>
       <span id="spanB">I am the fasted and most reliable <u>BureaDchanger  </u>in the whole of Abuja</span> </div>
     
       
@@ -19,4 +19,16 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 
-export
+export default {
+  name: 'App',
+  components: {
+  //  HelloWorld
+  }
+}
+</script>
+
+<style scoped>
+
+@import "./first.css";
+
+</style>
