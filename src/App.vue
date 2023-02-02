@@ -20,7 +20,7 @@ export default {
   name: 'App',
   data(){
     return{
-      abod:"./first.css"
+      abod:"./first.css"//i used this to make the importation of my css dynamic for both dark and light mode
     }
   },
   components: {
