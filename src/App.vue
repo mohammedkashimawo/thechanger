@@ -18,6 +18,11 @@
 
 export default {
   name: 'App',
+  data(){
+    return{
+      abod:"./first.css"
+    }
+  },
   components: {
   //  HelloWorld
   }
@@ -26,6 +31,6 @@ export default {
 
 <style scoped>
 
-@import "./first.css";
+@import "{{abod}}";
 
 </style>
