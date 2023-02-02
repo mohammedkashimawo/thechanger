@@ -1,0 +1,45 @@
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: hidden;
+  }
+  #div1 {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    background-blend-mode: luminosity;
+  }
+}
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: black;
+    overflow-y: hidden;
+  }
+  #div1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url("assets/abc..png");
+    background-size: 35% 97%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: luminosity;
+  }
+  #div1 #div1a {
+    position: relative;
+    top: 25vh;
+    left: 5vw;
+    background-color: none;
+    border: 1px white solid;
+    width: 40%;
+    height: 40vh;
+  }
+  #div1 #div1a .spanA {
+    font-family: "Karla", sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  #div1 #d
