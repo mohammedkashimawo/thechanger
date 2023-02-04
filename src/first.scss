@@ -1,45 +1,125 @@
 @media only screen and (max-width:900px){
     
     
-    body{background-color:rgba(0,0,0,0.7);        overflow-y:hidden;
+    body{background-color:none;        overflow-y:hidden;
     }
-    #div1{width:100%;
+    .div1{width:100%;
         height:100vh;
         background-color: black;
     background-position: center;
 background-blend-mode:luminosity;}
+
+#Dark{
+  background-color:white;
+  float:right;
+  width:4vw;
+}
   }
 
 
 @media only screen and (min-width: 900px){
-  body{background-color:black;        overflow-y:hidden;
+  body{background-color:now;        overflow-y:hidden;
   }
-  #div1{position:absolute;
+  .div1{position:absolute;
     width:100%;
         height:100vh;
         background-color: black;
         background-image: url('assets/abc..png');
-        background-size: 35% 97%;background-repeat: no-repeat;
+        background-size: 37vw 97vh;background-repeat: no-repeat;
     background-position: center;
-background-blend-mode:luminosity;
-    #div1a{position:relative;
+background-blend-mode:luminosity;}
+    .div1a{position:relative;
         top:25vh;
         left:5vw;
         background-color:none;
         border:0px white solid;
         width:40%;
-        height:40vh;
+        height:40vh;}
       
         .spanA{  font-family: 'Karla', sans-serif;
           color:white;
-          font-size:30px;
+
+          font-size:2vw;
           font-weight:bolder;
   }
-  #spanB{  font-family: 'Karla', sans-serif;
-    color:white;
-    font-size:15px;
+  .spanB{  font-family: 'Karla', sans-serif;
+    color:rgba(225,225,225,0.7);
+
+    font-size:1vw;
   
 
-}  
-    }}
+} 
+.spanC{
+  font-family: 'Karla', sans-serif;
+  color:rgba(225,225,225,0.7);
+  font-size:1vw;} 
+    
+
+  .Dark{
+    background-color:white;
+    float:right;
+    width:10vw;
+    height:5vh;
+    border-radius:10px;
+    margin-right:10px;
+    
   }
+  .Or{display:inline;
+    .listA{float:left;
+      font-size:50px;
+
+    }
+  }
+
+
+
+  //this section contains coes for only light mode
+  body{background-color:black;        overflow-y:hidden;
+  }
+  .div12{position:absolute;
+    width:100%;
+        height:100vh;
+        background-color: white;
+        background-image: url('assets/abc..png');
+        background-size: 37vw 97vh;background-repeat: no-repeat;
+    background-position: center;
+background-blend-mode:none;
+color:black;}
+.div1a2{position:relative;
+  top:25vh;
+  left:5vw;
+  background-color:none;
+  border:0px white solid;
+  width:40%;
+  height:40vh;}
+  
+  .spanA2{  font-family: 'Karla', sans-serif;
+    color:black;
+
+    font-size:2vw;
+    font-weight:bolder;
+}
+
+.spanB2{  font-family: 'Karla', sans-serif;
+  color:black;
+
+  font-size:1vw;
+
+
+} 
+.spanC2{
+font-family: 'Karla', sans-serif;
+color:black;
+font-size:1vw;} 
+
+  .Dark2{
+    background-color:black;
+    color:White;
+    float:right;
+    width:10vw;
+    height:5vh;
+    border-radius:10px;
+    margin-right:10px;
+    
+  }
+}
