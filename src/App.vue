@@ -4,19 +4,18 @@
       <button v-bind:class='jonah' @click='sare'>{{ toggle }}</button>
       <div :class='bla'>
         
-       <span v-bind:class='spank'>I am<span style="font-weight:bolder;text-decoration: underline;text-decoration-color: darkolivegreen;
-      text-decoration-thickness: 3px;"> Mohammed Ikechukwu Olamide</span></span>
+       <span v-bind:class='spank'>I  am <span style="font-weight:bolder;text-decoration: none;text-decoration-color: darkolivegreen;
+      text-decoration-thickness: 3px;">{{ user }}</span></span>
       <br><br>
       <span :class='spankb'>I am the fasted and most reliable
-       <u style="font-weight:bolder;color:white;text-decoration: underline;text-decoration-color: darkolivegreen;
-        text-decoration-thickness: 3px;">BureaDchanger  </u>in the whole of Abuja</span>
-    <br><span :class='spankC'> lets help you get your money exchange in the most<u style="font-weight:bolder;color:white;text-decoration: underline;text-decoration-color: darkolivegreen;
-        text-decoration-thickness: 3px;"> secured, profitable, reliable and<br> easiest</u>
+       <u :class="senior">BureaDchanger  </u>in the whole of Abuja</span>
+    <br><span :class='spankC'> lets help you get your money exchange in the most
+    <u :class="senior"> secured, profitable, reliable and<br> easiest</u>
        way you've never imagine.</span></div>
     <br><br>
   
- <ul class="Or">
-  <li class="list"><a href="#">Home</a></li>
+ <ul :class="machala">
+  <li class="list" style="  border-left:2px white solid;" ><a href="#">Home</a></li>
   <li class="list"><a href="#">About</a></li>
   <li class="list"><a href="#">Clients</a></li>
   <li class="list"><a href="#">Services</a></li>
@@ -43,6 +42,7 @@ export default {
   data(){
     return{
       abc:false,
+      user:"Kashimawo Olajunwon Abeeb",
     
       toggle:"Dark Mode",
       div1:true,
@@ -59,6 +59,11 @@ export default {
       spanB2:false,
       spanC:true,
       spanC2:false,
+      sen:true,
+      sen2:false,
+      or:true,
+      or2:false,
+
 
     
     }
@@ -106,6 +111,19 @@ export default {
         spanC2:!this.abc,
 
     }
+  },
+  senior:function(){
+      return{
+        sen:this.abc,
+        sen2:!this.abc,
+
+    }
+  }, machala:function(){
+      return{
+        or:this.abc,
+        or2:!this.abc,
+
+    }
   }},
   methods:{
 sare:function(){
@@ -115,7 +133,7 @@ if(this.abc == false){
   this.toggle="light-mode";
 }
 else if(this.abc == true){
-  this.toggle = "Dark-mode"
+  this.toggle = "Dark-mode";
 }
 
 console.log(this.Dark2);
