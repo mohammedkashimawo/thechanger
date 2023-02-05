@@ -4,8 +4,8 @@
       <button v-bind:class='jonah' @click='sare'>{{ toggle }}</button>
       <div :class='bla'>
         
-       <span v-bind:class='spank'>I  am <span style="font-weight:bolder;text-decoration: none;text-decoration-color: darkolivegreen;
-      text-decoration-thickness: 3px;">{{ user }}</span></span>
+       <span v-bind:class='spank'>I am <span style="font-weight:bolder;text-decoration: none;text-decoration-color: darkolivegreen;
+      text-decoration-thickness: 3px;">{{ user | momo }}</span></span>
       <br><br>
       <span :class='spankb'>I am the fasted and most reliable
        <u :class="senior">BureaDchanger  </u>in the whole of Abuja</span>
@@ -14,8 +14,8 @@
        way you've never imagine.</span></div>
     <br><br>
   
- <ul :class="machala">
-  <li class="list" style="  border-left:2px white solid;" ><a href="#">Home</a></li>
+ <ul v-bind:class="machala">
+  <li class="list" style=" border-left:2px white solid;" ><a href="#">Home</a></li>
   <li class="list"><a href="#">About</a></li>
   <li class="list"><a href="#">Clients</a></li>
   <li class="list"><a href="#">Services</a></li>
@@ -118,7 +118,8 @@ export default {
         sen2:!this.abc,
 
     }
-  }, machala:function(){
+  },
+   machala:function(){
       return{
         or:this.abc,
         or2:!this.abc,
@@ -161,6 +162,6 @@ this.div1="div12";}
 </script>
 
 <style scoped>
-
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import "./first.css";
 </style>

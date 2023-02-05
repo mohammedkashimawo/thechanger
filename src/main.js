@@ -19,6 +19,10 @@ library.add(faUserSecret)
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+Vue.filter('momo',function(value){
+  return value.toUpperCase();
+  
+})
 Vue.config.productionTip = false
 
 Vue.component('exchangeWidget',exchangeWidget)

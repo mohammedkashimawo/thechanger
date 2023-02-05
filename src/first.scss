@@ -64,20 +64,23 @@ background-blend-mode:luminosity;}
     margin-right:10px;
     
   }
-  .Or{position:absolute;
+  .or{position:absolute;
     left:2%;
-    
+    font-family: 'Changa', sans-serif;
+    list-style:none;
     
     border-radius:0px;
     display:inline-block;
     background-color:black;
+    text-shadow: 1px 1px 1px grey;
     .list{
       
       float:left;
       margin-right:0px;
-     font-family:Malgun Gothic;
+      font-family: 'Changa', sans-serif;
       font-size:20px;
       color:rgba(110,110,110,0.5);
+      
     
     
 
@@ -85,29 +88,29 @@ background-blend-mode:luminosity;}
   .list:hover{  
       float:left;
       margin-right:0px;
-      border-bottom: 1px white solid;
-     font-family:Malgun Gothic;
-      font-size:20px;}
+      font-family: 'Changa', sans-serif;
+    
+      font-size:20px;text-decoration: underline;}
 
 
     a{ margin-left:15px;color:white;text-decoration: none;
-      font-family:Malgun Gothic;}
+      }
       a:active{ margin-left:15px;color:white;text-decoration: none;
-        font-family:Malgun Gothic;}
+        }
         a:hover{ margin-left:15px;color:white;text-decoration: none;
-          font-family:Malgun Gothic;}
+          }
   }
 
   .sen{font-weight:bolder;color:white;
     text-decoration: none;
     text-decoration-color: darkolivegreen;
-  text-decoration-thickness: 3px;
-  }
+  text-decoration-thickness: 3px;}
   //this section contains coes for only light mode
 
 
 
-  body{background-color:black;        overflow-y:hidden;
+  body{background-color:black;  
+     overflow-y:hidden;
   }
   .div12{position:absolute;
     width:100%;
@@ -163,20 +166,22 @@ font-size:1vw;}
   }
 
 
-  .Or2{position:absolute;
+  .or2{position:absolute;
     left:2%;
-    
+    list-style-type: none;
+    font-family: 'Almarai', sans-serif;
     
     border-radius:0px;
     display:inline-block;
     background-color:black;
     .list{
-      
+      list-style-type: none;
       float:left;
       margin-right:0px;
      font-family:Malgun Gothic;
       font-size:20px;
       color:rgba(110,110,110,0.5);
+      
     
     
 

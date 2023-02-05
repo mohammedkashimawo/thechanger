@@ -65,44 +65,44 @@
     border-radius: 10px;
     margin-right: 10px;
   }
-  .Or {
+  .or {
     position: absolute;
     left: 2%;
+    font-family: "Changa", sans-serif;
+    list-style: none;
     border-radius: 0px;
     display: inline-block;
     background-color: black;
+    text-shadow: 1px 1px 1px grey;
   }
-  .Or .list {
+  .or .list {
     float: left;
     margin-right: 0px;
-    font-family: Malgun Gothic;
+    font-family: "Changa", sans-serif;
     font-size: 20px;
     color: rgba(110, 110, 110, 0.5);
   }
-  .Or .list:hover {
+  .or .list:hover {
     float: left;
     margin-right: 0px;
-    border-bottom: 1px white solid;
-    font-family: Malgun Gothic;
+    font-family: "Changa", sans-serif;
     font-size: 20px;
+    text-decoration: underline;
   }
-  .Or a {
+  .or a {
     margin-left: 15px;
     color: white;
     text-decoration: none;
-    font-family: Malgun Gothic;
   }
-  .Or a:active {
+  .or a:active {
     margin-left: 15px;
     color: white;
     text-decoration: none;
-    font-family: Malgun Gothic;
   }
-  .Or a:hover {
+  .or a:hover {
     margin-left: 15px;
     color: white;
     text-decoration: none;
-    font-family: Malgun Gothic;
   }
   .sen {
     font-weight: bolder;
@@ -170,40 +170,43 @@
             text-decoration-color: darkolivegreen;
     text-decoration-thickness: 3px;
   }
-  .Or2 {
+  .or2 {
     position: absolute;
     left: 2%;
+    list-style-type: none;
+    font-family: "Almarai", sans-serif;
     border-radius: 0px;
     display: inline-block;
     background-color: black;
   }
-  .Or2 .list {
+  .or2 .list {
+    list-style-type: none;
     float: left;
     margin-right: 0px;
     font-family: Malgun Gothic;
     font-size: 20px;
     color: rgba(110, 110, 110, 0.5);
   }
-  .Or2 .list2:hover {
+  .or2 .list2:hover {
     float: left;
     margin-right: 0px;
     border-bottom: 1px white solid;
     font-family: Malgun Gothic;
     font-size: 20px;
   }
-  .Or2 a {
+  .or2 a {
     margin-left: 15px;
     color: black;
     text-decoration: none;
     font-family: Malgun Gothic;
   }
-  .Or2 a:active {
+  .or2 a:active {
     margin-left: 15px;
     color: black;
     text-decoration: none;
     font-family: Malgun Gothic;
   }
-  .Or2 a:hover {
+  .or2 a:hover {
     margin-left: 15px;
     color: black;
     text-decoration: none;
