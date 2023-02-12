@@ -5,8 +5,8 @@
     
     <form action="/#">
 
-<select id="currency" v-model="pink" >
-
+<select id="currency" v-model="pink" placeholder="from" >
+<label>from</label>
 <option>select currency</option>
 <option value="AFN">Afghan Afghani</option>
 <option value="ALL">Albanian Lek</option>
@@ -351,43 +351,85 @@
 </form>
 <br>
 <span id="vex">{{ project }}</span>   
+<br>
+<span id="follow">Check my Rates</span>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
+
+Vue.use(VueAxios, axios)
 export default {
   name: 'AppT2',
   data(){
-    return{pink:'',
+    return{
+      pink:'',
   tech:'',
 project:"",
 mab:[],
-maj:[],}
+maj:[],
+pod:'',
+aza:'',}
   },//the algorithm you will now write here is mab/maj to get the value between each currency
+computed:{
+  come:function(){
+    return {
+  pink:this.pink,
+  }}
+},
+  updated( ){
+this.pod='https://v6.exchangerate-api.com/v6/7d2c461445fb319cb5117b12/latest/' + this.pink;
 
-  mounted:{
-   /* function(){
-    //  axios.get('let your url be here').then((response)=>{
-       /// this.mab=response.data;
 
-       
-      });
+this.aza='https://v6.exchangerate-api.com/v6/7d2c461445fb319cb5117b12/latest/' + this.tech;
+     axios.get(this.pod).
+     then((response)=>{
+       this.mab=response.data;
+       console.log(response.data); 
+      
+ //  var boj=JSON.parse(this.mab);//this is reaaly not needed..
+    console.log(this.mab.conversion_rates.USD);
+
+    console.log
+  
+  
+  
+  
+  
+  });
+
+       axios.get(this.aza).
+     then((response)=>{
+       this.maj=response.data;
+       console.log(response.data); })
+       .catch(function (error) {
+    if (error.response) {
+      // The request was made and the server responded with a status code
+      // that falls out of the range of 2xx
+      console.log(error.response.data);
+      console.log(error.response.status);
+      console.log(error.response.headers);
+    } else if (error.request) {
+      // The request was made but no response was received
+      // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+      // http.ClientRequest in node.js
+      console.log(error.request);
+    } else {
+      // Something happened in setting up the request that triggered an Error
+      console.log('Error', error.message);
+    }
+    console.log(error.config);
+  });
+    
     //  axios.get("let your url be here").then((response)=>{
        //   this.maj=response.data;
-        })
+        }
     
-        //call this.project here and then put some checking codes here to..
-  }
-
-*/},
-  computed:{
-  
-  },
-  methods:{
-
-  }
-  
+ 
 }
 </script>
 
@@ -408,13 +450,13 @@ maj:[],}
 }
 select{height:50px;
   display:inline-block;
-  width:30%;
+  width:35%;
 position:relative;
 font-family:monospace;
 border:0px black solid;
 background-color:rgba(225,225,255,0.3);
 box-shadow:2px 2px 2px rgba(0,0,0,0.35);
-left:20px;
+left:12%;
 top:20px;
 border-radius:5px;
 margin-right:10%;
@@ -425,7 +467,7 @@ text-align: justify;
 #garri{height:50px;
   display:inline-block;
   
-  width:30%;
+  width:35%;
 position:relative;
 font-family:monospace;
 border:0px black solid;
@@ -434,15 +476,28 @@ box-shadow:2px 2px 2px rgba(0,0,0,0.35);
 
 top:20px;
 border-radius:5px;
-left:5%;
+left:12%;
 }
 #vex{
   display: inline-block;
   position:relative;
   left:3vw;
+  top:10px;
   width:20vw;
   height:50px;
   background-color:rgba(225,225,225,0.3);
-  border:10px;
+  border-radius:5px;
+  box-shadow:2px 2px 4px rgba(0,0,0,0.4);
+  backdrop-filter: blur(50%);
+}
+#follow{
+  display: inline-block;
+  position:relative;
+  top:10px;
+  left:9vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:1.3vw;
+  text-shadow: 2px 2px 2px grey;
+
 }
 </style>
