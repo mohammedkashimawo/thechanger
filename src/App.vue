@@ -4,9 +4,10 @@
       <button v-bind:class='jonah' @click='sare'>{{ toggle }}</button>
       <div :class='bla'>
         
-       <span v-bind:class='spank'>I am 
-       <span style="font-weight:bolder;text-decoration: none;text-decoration-color: darkolivegreen;
-      text-decoration-thickness: 3px;">{{ user | momo }}</span></span>
+       <span v-bind:class='spank'> I am
+      <vue-typed-js :strings="['MOHAMMED MOJEED', 'RAMADAN KASHIMAWO']" :loop="true" :typeSpeed="40">
+  <h1 class="typing"></h1>
+</vue-typed-js></span>
       <br><br>
       <span :class='spankb'>I am the fasted and most reliable
        <u :class="senior">BureaDchanger  </u>in the whole of Abuja</span>
@@ -41,9 +42,10 @@
 
     
     </div>
-<p>{{ pink }}</p>
+
 
     <exchangeWidget></exchangeWidget>
+    <scroLLer></scroLLer>
   </div>
 </template>
 
@@ -149,10 +151,10 @@ sare:function(){
   this.abc=!this.abc;
 
 if(this.abc == false){
-  this.toggle="light-mode";
+  this.toggle="Dark-mode";
 }
 else if(this.abc == true){
-  this.toggle = "Dark-mode";
+  this.toggle = "Light-mode";
 }
 
 console.log(this.Dark2);
@@ -184,5 +186,4 @@ document.getElementById('currency').disabled=false;
 
 <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import "./first.css";
-</style>
+@import "./first

@@ -1,5 +1,6 @@
 module.exports = {
   devServer: {
-    proxy: 'v6.exchangerate-api.com'
+    proxy: 'v6.exchangerate-api.com',
+    
   }
 }
