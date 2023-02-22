@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <div v-bind:class='geo'>
-      <button v-bind:class='jonah' @click='sare'>{{ toggle }}</button>
+      <button v-bind:class='jonah' @click='sare'>{{ toggle.toUpperCase()}}</button>
       <div :class='bla'>
         
-       <span v-bind:class='spank'> I am
-      <vue-typed-js :strings="['MOHAMMED MOJEED', 'RAMADAN KASHIMAWO']" :loop="true" :typeSpeed="40">
+       <span v-bind:class='spank'>
+      <vue-typed-js :strings="[' I am MOHAMMED MOJEED', 'RAMADAN KASHIMAWO']" :loop="true" :typeSpeed="80" :backSpeed="80">
   <h1 class="typing"></h1>
 </vue-typed-js></span>
       <br><br>
@@ -13,11 +13,13 @@
        <u :class="senior">BureaDchanger  </u>in the whole of Abuja</span>
     <br><span :class='spankC'> lets help you get your money exchange in the most
     <u :class="senior"> secured, profitable, reliable and<br> easiest</u>
-       way you've never imagine.</span></div>
+       way you've never imagine.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to
+        consider the form of a webpage or publication, without the meaning of the text influencing the design.</span>
+      </div>
     <br><br>
   
  <ul v-bind:class="machala">
-  <li class="list" style=" border-left:2px white solid;" ><a href="#">Home</a></li>
+  <li class="list" style=" border-left:0px white solid;" ><a href="#">Home</a></li>
   <li class="list"><a href="#">About</a></li>
   <li class="list"><a href="#">Clients</a></li>
   <li class="list"><a href="#">Services</a></li>
@@ -25,19 +27,24 @@
   <li class="list"><a href="#">Contact</a></li>
  </ul> 
  <br>
- <div class="Nav">
- <font-awesome-icon icon="fa-brands fa-twitter" style="color:aliceblue;font-size:20px;margin-right:20px;" beat/>
- <font-awesome-icon icon="fa-brands fa-instagram" style="color:aliceblue;font-size:30px;"/>
+ <div id="nav" class="Nav">
+ <a href="https://twitter.com" id="twitter">
+  <font-awesome-icon icon="fa-brands fa-twitter" 
+  style=""/>
+</a>
+ <a href="https://instagram.com" >  
+  <font-awesome-icon id="insta" icon="fa-brands fa-instagram" style="color:aliceblue;font-size:30px;margin-left:10px;"/></a>
+
 <a :href="facebook">
- <font-awesome-icon icon="fa-brands fa-facebook" style="color:aliceblue;font-size:30px;"/>
- </a>
+ <font-awesome-icon icon="fa-brands fa-facebook" class="facebook"/> </a>
  
- <a href="mailto:mojjeasy@gmail.com?subject='this is for proce enquiry'">
-  <font-awesome-icon icon="fa-solid fa-envelope" style="color:aliceblue;font-size:30px;"/></a>
- <a :href="money">
-  <font-awesome-icon icon="fa-brands fa-whatsapp" style="color:aliceblue;font-size:30px;"/></a>
+ <a href="mailto:mojjeasy@gmail.com?subject='this is for proce enquiry'" id="">
+  <font-awesome-icon icon="fa-solid fa-envelope" style="color:aliceblue;font-size:30px;margin-left:10px;text-shadow:2px 2px 2px grey;"/></a> 
+  <a :href="money" >
+  <font-awesome-icon icon="fa-brands fa-whatsapp" id="probs" style=""/></a>
  <a href="tel:09061525364">
-  <font-awesome-icon icon="fa-solid fa-phone fa-beat" style="color:aliceblue;font-size:30px;" beat /></a>
+  <font-awesome-icon icon="fa-solid fa-phone fa-beat" id="roll" 
+  style="" beat /></a>
 </div>
 
     
@@ -53,6 +60,7 @@
 //import HelloWorld from './components/HelloWorld.vue'
 
 //import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import {bus} from './main'
 
 export default {
   name: 'App',
@@ -151,11 +159,16 @@ sare:function(){
   this.abc=!this.abc;
 
 if(this.abc == false){
-  this.toggle="Dark-mode";
+  this.toggle="Dark-mode";document.getElementById('normally').style.left='40vw';
+  document.getElementById('nav').style.left='30vw';
+  document.getElementById('nav').style.top='5%';
 }
 else if(this.abc == true){
   this.toggle = "Light-mode";
+  document.getElementById('normally').style.left='75vw';
 }
+
+bus.$emit("newEvent","am using change");
 
 console.log(this.Dark2);
 /*  if(this.abc == true){
@@ -186,4 +199,12 @@ document.getElementById('currency').disabled=false;
 
 <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import "./first
+@import "./first.css";
+
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+</style>

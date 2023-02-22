@@ -81,27 +81,25 @@
     font-size: 20px;
     color: rgba(110, 110, 110, 0.5);
   }
+  .or .list a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  .or .list a:active {
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  .or .list a:hover {
+    margin-left: 15px;
+  }
   .or .list:hover {
     float: left;
     margin-right: 0px;
     font-family: "Changa", sans-serif;
     font-size: 20px;
     text-decoration: underline;
-  }
-  .or a {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
-  }
-  .or a:active {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
-  }
-  .or a:hover {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
+    text-decoration-color: red;
   }
   .sen {
     font-weight: bolder;
@@ -112,15 +110,101 @@
   }
   .Nav {
     width: 30vw;
+    text-shadow: 2px 32px 32px black;
     position: relative;
     top: 40px;
     left: 100px;
     height: 20vh;
     background-color: none;
   }
+  .facebook {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+    text-align: left;
+    background-color: none;
+    border-radius: 50%;
+    font-weight: bolder;
+  }
+  .facebook:active {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .facebook:hover {
+    background-color: rgb(11, 11, 175);
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  #twitter {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #twitter:active {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #twitter:hover {
+    color: rgb(29, 161, 242);
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #insta {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 70px;
+    text-shadow: 2px 2px 2px black;
+  }
+  #insta:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 70px;
+  }
+  #wassap {
+    color: aliceblue;
+    border-radius: 50%;
+    text-shadow: 0px 2px 2px black;
+  }
+  #probs {
+    color: white;
+    margin-left: 10px;
+    font-size: 30px;
+    border: 0px brown solid;
+    border-radius: 50%;
+    background-color: none;
+    width: 30px;
+    height: 30px;
+    text-shadow: 2px 2px 2px grey;
+  }
+  #probs:hover {
+    color: white;
+    background-color: purple;
+    font-size: 30px;
+    border: 0px brown solid;
+    border-radius: 50%;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+  }
+  #roll {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #roll:hover {
+    color: #f09433;
+  }
+  #nav {
+    text-shadow: 2px 2px 2px black;
+  }
   body {
     background-image: url("assets/pex.jpg");
-    background-size: 100vw 80vh;
+    background-size: 100vw 100vh;
     overflow-x: hidden;
   }
   .div12 {
@@ -139,26 +223,35 @@
   .div1a2 {
     position: relative;
     top: 25vh;
-    left: 5vw;
+    left: 20vw;
     background-color: none;
     border: 0px white solid;
     width: 40%;
     height: 40vh;
   }
   .spanA2 {
+    text-shadow: 1px 2px 1px black;
+    display: inline-block;
+    top: -50px;
+    left: 0vw;
+    width: 50vw;
+    position: absolute;
     font-family: "Karla", sans-serif;
-    color: black;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bolder;
+    color: white;
+    text-shadow: 2px 3px 3px black;
   }
   .spanB2 {
     font-family: "Karla", sans-serif;
-    color: black;
+    color: white;
+    text-shadow: 1px 2px 1px black;
     font-size: 1vw;
   }
   .spanC2 {
     font-family: "Karla", sans-serif;
-    color: black;
+    color: white;
+    text-shadow: 1px 2px 1px black;
     font-size: 1vw;
   }
   .Dark2 {
@@ -172,27 +265,32 @@
   }
   .sen2 {
     font-weight: bolder;
-    color: black;
+    color: white;
+    text-shadow: 1px 2px 1px black;
     text-decoration: none;
-    text-decoration-color: darkolivegreen;
-    text-decoration-thickness: 3px;
+    text-decoration-color: white;
+    text-decoration-thickness: 0px;
   }
   .or2 {
     position: absolute;
-    left: 2%;
+    left: 22%;
     list-style-type: none;
-    font-family: "Almarai", sans-serif;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 2vw;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px black;
     border-radius: 0px;
     display: inline-block;
-    background-color: black;
+    background-color: rgba(110, 110, 110, 0.1);
+    color: white;
+    width: 50vw;
+    top: 0vh;
   }
   .or2 .list {
     list-style-type: none;
     float: left;
     margin-right: 0px;
-    font-family: Malgun Gothic;
-    font-size: 20px;
-    color: rgba(110, 110, 110, 0.5);
+    color: white;
   }
   .or2 .list2:hover {
     float: left;
@@ -200,23 +298,22 @@
     border-bottom: 1px white solid;
     font-family: Malgun Gothic;
     font-size: 20px;
+    text-shadow: 0px 0px 0px grey;
   }
   .or2 a {
     margin-left: 15px;
-    color: black;
+    color: white;
     text-decoration: none;
-    font-family: Malgun Gothic;
   }
   .or2 a:active {
     margin-left: 15px;
-    color: black;
     text-decoration: none;
-    font-family: Malgun Gothic;
+    color: white;
   }
   .or2 a:hover {
     margin-left: 15px;
-    color: black;
-    text-decoration: none;
-    font-family: Malgun Gothic;
+    text-decoration: underline;
+    color: white;
+    text-shadow: 0px 0px 0px grey;
   }
 }/*# sourceMappingURL=first.css.map */

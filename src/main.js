@@ -53,6 +53,8 @@ Vue.config.productionTip = false
 Vue.component('exchangeWidget',exchangeWidget)
 
 Vue.component('scroLLer',scroLLer)
+
+export const bus = new Vue();
 new Vue({
   render: h => h(App),
 }).$mount('#app')

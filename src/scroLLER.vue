@@ -27,7 +27,7 @@
   import Vue from 'vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-
+import { bus } from './main'
 
 Vue.use(VueAxios, axios)
   
@@ -38,6 +38,7 @@ Vue.use(VueAxios, axios)
     return{
    counts:[],//despite the fact that its an array, dont be confused here you can still call contact.body..
    lowkey:[],
+   wulo:'',
    blala:[],
    big:{
     rexie:'',
@@ -134,7 +135,9 @@ console.log(theobj);
         
 
       });*/
-    
+    bus.$on('newEvent',(value)=>{
+     this.wulo=value;
+    })
     }
   }
   </script>
@@ -145,7 +148,7 @@ console.log(theobj);
     
     background-color:white; top:53vh;
     overflow-y: hidden;
-    font-size: 20px;
+    
     overflow-x: hidden;font-family: 'Rajdhani', sans-serif;
     font-weight:bolder;
     font-size:20px;text-align: left;margin-left:0px;
@@ -159,9 +162,10 @@ console.log(theobj);
     width: 200px;
     border:0.5px white solid;
     height: 200px;
-    top:9vh;
+    top:12vh;
     border-radius:10px;
     backdrop-filter: blur(50%);
+    color:white;font-family:'Rajdhani', sans-serif;text-align: center;
     background: linear-gradient(5deg, rgba(225,225,225,0.5),rgba(225,225,225.0.5));
     box-shadow:
       0 1px 1px hsla(0, 33%, 99%, 0.075),
@@ -173,13 +177,13 @@ console.log(theobj);
 
 }
     #turn{
-height:100px;
-width:100px;
+height:2vh;
+width:5vw;
 background-color:white;
     }
-    #joe{width:10vw;
-      height:7vh;
-      margin-top:10px;margin-left:1.3vw;
+    #joe{width:75%;
+      height:50%;
+      margin-top:0.5vh;margin-left:0vw;
       background-color:rgba(225,225,255,0);
 border:0.5px white solid;
 border-radius:5px;
@@ -188,12 +192,12 @@ color:white;
 
     }
 #sendie{
-width:9vw;
-height:30px;
+width:65%;
+height:3.5vh;
 border:0px white solid;
 border-radius:3px;
 box-shadow:1px 1px 1px black;
-margin-left:25px;
+margin-left:0%;
 background-color:rgba(225,225,225,0.5);
 color:white;
 font-family: 'Rajdhani', sans-serif;
@@ -208,7 +212,7 @@ font-weight:bolder
   from {margin-left: 0px;}
   to {margin-left: -2200px;}
 }
-#peace{width:50px;height:30px;font-size:'Rajdhani';margin-left:70px;border-radius:5px;border:0px black solid;}
+#peace{width:50px;height:30px;font-size:'Rajdhani';margin-left:0px;border-radius:5px;border:0px black solid;}
 </style>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
