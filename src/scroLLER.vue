@@ -1,12 +1,13 @@
 <template>
     <div id="appD">
 
-        <div id="upd">
+        
           <div id="anime">
-            <span id="turn" v-for="count in counts" :key="count.body">&nbsp;&nbsp;{{ count.title}}:-<i>'{{ count.body }}...</i>'</span>
+            <span id="turn" v-for="count in counts" :key="count.body">&nbsp;&nbsp;{{ count.title}}:-<i>'{{ count.body }}...kkkk'</i>
+            </span>
            <span v-for="lowkey in lowkey" :key="lowkey.id" id="bosco" ref="pablo"></span></div>
    
-  </div>
+  
 
   <div id="normally">
     ADD your comment:-
@@ -95,7 +96,7 @@ body: this.big.rexie,
       let newdata=data.data;
       let tent=new Array();
       for(let key in newdata){
-        this.counts.push
+       // this.counts.push
       //  console.log(newdata[key]);
         tent.push(newdata[key]);//we cant use this.tent here simply because the tent are is called here not in data()
         
@@ -103,7 +104,7 @@ body: this.big.rexie,
       this.counts=tent;
       console.log(this.counts);
      // console.log(newdata);
-     })
+     });
         
         /*
                  let text="";
@@ -137,21 +138,13 @@ console.log(theobj);
       });*/
     bus.$on('newEvent',(value)=>{
      this.wulo=value;
-    })
+    });
     }
   }
   </script>
   <style scoped>
 
-#upd{display: inline-block;
-    position: relative;width:max-content;height: min-content;
-    
-    background-color:white; top:53vh;
-    overflow-y: hidden;
-    
-    overflow-x: hidden;font-family: 'Rajdhani', sans-serif;
-    font-weight:bolder;
-    font-size:20px;text-align: left;margin-left:0px;
+#upd{
     
 }
 #normally{
@@ -162,7 +155,7 @@ console.log(theobj);
     width: 200px;
     border:0.5px white solid;
     height: 200px;
-    top:12vh;
+    top:10vh;
     border-radius:10px;
     backdrop-filter: blur(50%);
     color:white;font-family:'Rajdhani', sans-serif;text-align: center;
@@ -180,6 +173,7 @@ console.log(theobj);
 height:2vh;
 width:5vw;
 background-color:white;
+color:black;
     }
     #joe{width:75%;
       height:50%;
@@ -204,14 +198,22 @@ font-family: 'Rajdhani', sans-serif;
 font-weight:bolder
 
 }
-#anime{background-color:red;
-  animation: animatiing 100s infinite;
+#anime{background-color:white;
+  animation: animatiing 100s infinite;color:black;
+  display: inline-block;
+    position: relative;width:max-content;height: min-content;
+    
+    background-color:white; top:53vh;
+    overflow-y: hidden;
+    
+    overflow-x: hidden;font-family: 'Rajdhani', sans-serif;
+    font-weight:bolder;
+    font-size:20px;text-align: left;margin-left:0px;
+}@keyframes animatiing{
+  from{margin-left:0px;}
+  to{margin-left:-1000px;}
 }
 
-@keyframes animatiing {
-  from {margin-left: 0px;}
-  to {margin-left: -2200px;}
-}
 #peace{width:50px;height:30px;font-size:'Rajdhani';margin-left:0px;border-radius:5px;border:0px black solid;}
 </style>
 <style>

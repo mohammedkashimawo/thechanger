@@ -352,7 +352,7 @@
 </form>
 <br>
 <span id="vex"><br>{{ project }}</span>   
-<br>
+<br><br>
 <span id="follow">Check my Rates to Naira</span>
 <br>
 <br>
