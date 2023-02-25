@@ -1,21 +1,24 @@
 <template>
   <div id="app">
     <div v-bind:class='geo'>
+      
       <button v-bind:class='jonah' @click='sare'>{{ toggle.toUpperCase()}}</button>
       <div :class='bla'>
-        
+     
        <span v-bind:class='spank'>
       <vue-typed-js :strings="[' I am MOHAMMED MOJEED', 'RAMADAN KASHIMAWO']" :loop="true" :typeSpeed="80" :backSpeed="80">
   <h1 class="typing"></h1>
 </vue-typed-js></span>
+<div id="juju" align="justify">
       <br><br>
       <span :class='spankb'>I am the fasted and most reliable
-       <u :class="senior">BureaDchanger  </u>in the whole of Abuja</span>
-    <br><span :class='spankC'> lets help you get your money exchange in the most
-    <u :class="senior"> secured, profitable, reliable and<br> easiest</u>
-       way you've never imagine.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to
+       <span :class="senior">BureaDchanger  </span>in the whole of Abuja</span>
+    <span :class='spankC'> lets help you get your money exchange in the most
+    <u :class="senior"> secured, profitable, reliable and easiest</u>
+       way you've never imagine.In publishing and graphic design, 
+       Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to
         consider the form of a webpage or publication, without the meaning of the text influencing the design.</span>
-      </div>
+      </div></div>
     <br><br><br><br>
   
  <ul v-bind:class="machala">
@@ -46,7 +49,41 @@
   <font-awesome-icon icon="fa-solid fa-phone fa-beat" id="roll" 
   style="" beat /></a>
 </div>
+<div id="pint">
+          <ul>
+          <li><span class="tooltiptext">Home</span>
+ <a href="https://instagram.com" >  
+  <font-awesome-icon id="insta" icon="fa-solid fa-home" style="color:aliceblue;font-size:30px;margin-left:10px;color:black;"/>
+</a></li>
 
+<li>
+ <a href="https://instagram.com" > <span class="tooltiptext">clients</span> 
+  <font-awesome-icon id="insta" icon="fa-solid fa-user" style="color:aliceblue;font-size:30px;margin-left:10px;color:black;"/>
+</a></li>
+<li><span class="tooltiptext">servies</span>
+ <a href="https://instagram.com" >  
+  <font-awesome-icon id="insta" icon="fa-solid fa-users" style="color:aliceblue;font-size:30px;margin-left:10px;color:black;"/>
+</a></li>
+
+<li>
+ <a href="https://instagram.com" >  <span class="tooltiptext">About</span>
+  <font-awesome-icon id="insta" icon="fa-solid fa-briefcase" style="color:aliceblue;font-size:30px;margin-left:10px;color:black;"/>
+</a></li>
+
+<li>
+ <a href="https://instagram.com" >  <span class="tooltiptext">Rates</span>
+  <font-awesome-icon id="insta" icon="fa-solid fa-money-bill" style="color:aliceblue;font-size:30px;margin-left:10px;color:black;"/>
+</a></li>
+
+<li>
+ <a href="https://instagram.com" >  <span class="tooltiptext">contact</span>
+  <font-awesome-icon id="insta" icon="fa-solid fa-contact-book" style="color:aliceblue;font-size:30px;margin-left:10px;color:black;"/>
+</a></li>
+
+
+
+        </ul>
+       </div>
     
     </div>
 

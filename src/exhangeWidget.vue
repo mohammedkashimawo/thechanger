@@ -353,7 +353,7 @@
 <br>
 <span id="vex"><br>{{ project }}</span>   
 <br><br>
-<span id="follow">Check my Rates to Naira</span>
+<span id="follow2">Check my Rates to Naira</span>
 <br>
 <br>
 <select id="garril" v-model="apala" >
@@ -525,7 +525,7 @@
 <option value="ZMK">Zambian Kwacha</option>
 </select>
 
-<span id="vex"><br>{{ mompha }}</span>  
+<span id="vex1"><br>{{ mompha }}</span>  
 
   </div>
 </template>
@@ -613,114 +613,6 @@ if(this.tech=='')
 </script>
 
 <style scoped>
-#appT2{
-  background-color:none;
-  position:relative;
-  left:70vw;
-  top:8vh;
-  backdrop-filter: blur(20%);
-  height:300px;
-  width:25vw;
-  border-radius:10px;
-  color:black;
-  font-size:1.2vw;
-  vertical-align: center;
- 
-   
-
-
-  
-}
-select{height:50px;
-  display:inline-block;
-  width:35%;
-position:relative;
-font-family:monospace;
-border:0.5px grey solid;
-background-color:rgba(225,225,255,0);
-color:white;
-box-shadow:1px 1px 1px 1px rgba(225,225,225,.5);
-left:12%;
-top:20px;
-border-radius:5px;
-margin-right:10%;
-text-align: justify;
-
-}
-
-#garri{height:50px;
-  display:inline-block;
-  
-  width:35%;
-position:relative;
-font-family:monospace;
-border:1px white solid;
-background-color:rgba(225,225,255,0);
-box-shadow:2px 2px 2px rgba(0,0,0,0.35);
-color:white;
-top:20px;
-border-radius:5px;
-left:12%;
-}
-
-#garril{
-
-
-  appearance: none;
-
-  
-  border: none;
-  padding: 0 1em 0 0;
-  margin: 0;
-  width: 100%;
-  
-  cursor: inherit;
-  line-height: inherit;
-  height:50px;
-  display:inline-block;
-  
-  width:35%;
-position:relative;
-font-family:monospace;
-border:1px white solid;
-background-color:rgba(225,225,255,0);
-box-shadow:2px 2px 2px rgba(0,0,0,0.35);
-
-top:0vh;
-border-radius:5px;
-left:33%;
-
-}
-option{color:black;}
-#vex{
-  display: inline-block;
-  position:relative;
-  left:3vw;
-  top:10px;
-  width:20vw;
-  height:50px;
-  padding-top:-5px;
-  background-color:none;
-
-  border-radius:5px;
-  box-shadow:2px 2px 4px rgba(0,0,0,0.4);
-  border:1px white solid;
-  color:white;
-  backdrop-filter: blur(50%);
-  text-align:center;
-  vertical-align:middle;
-
-}
-#follow{
-  display: inline-block;
-  position:relative;
-  top:10px;
-  left:7vw;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size:1.3vw;
-  text-shadow: 0px 1px 2px grey;
-  color:white;
-
-}
+@import './3rd.css';
 </style>
 

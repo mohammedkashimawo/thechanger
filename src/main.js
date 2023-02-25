@@ -24,11 +24,17 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
     import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
     import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
     import { faPhone } from '@fortawesome/free-solid-svg-icons'
-  
+    import { faHome } from '@fortawesome/free-solid-svg-icons'
+    import { faUser } from '@fortawesome/free-solid-svg-icons'
+    import { faUsers } from '@fortawesome/free-solid-svg-icons'
+    import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+    import { faMoneyBill } from '@fortawesome/free-solid-svg-icons'
+    import { faContactBook } from '@fortawesome/free-solid-svg-icons'
+
 //library.add(fas);
 
 /* add icons to the library */
-library.add(faTwitter,faInstagram,faFacebook,faEnvelope,faWhatsapp,faPhone)
+library.add(faTwitter,faInstagram,faFacebook,faEnvelope,faWhatsapp,faPhone,faHome,faUsers,faUser,faBriefcase,faMoneyBill,faContactBook)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

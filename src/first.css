@@ -1,7 +1,44 @@
 @media only screen and (max-width: 900px) {
   body {
-    background-image: url("assets/bcd.jpg");
+    background-color: rgba;
+    height: 100vh;
     overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  #pint {
+    display: inline-block;
+    position: absolute;
+    width: 97vw;
+    height: 10vh;
+    background-color: white;
+    top: 0px;
+  }
+  #pint ul {
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+  }
+  #pint ul li {
+    float: left;
+    width: 16%;
+  }
+  .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: none;
+    border: 0px black solid;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  li:hover .tooltiptext {
+    visibility: visible;
+    bottom: -20px;
   }
   .div1 {
     width: 100%;
@@ -14,9 +51,201 @@
     background-color: white;
     float: right;
     width: 4vw;
+    visibility: hidden;
+  }
+  .div1a {
+    position: relative;
+    top: 25vh;
+    left: 5vw;
+    background-color: none;
+    border: 0px white solid;
+    width: 40%;
+    height: 40vh;
+    color: red;
+  }
+  .div1a .spanA {
+    display: inline-block;
+    top: -10vh;
+    left: 15vw;
+    position: absolute;
+    font-family: "Karla", sans-serif;
+    color: white;
+    width: 100vw;
+    text-shadow: 2px 2px 2px rgba(225, 225, 225, 0.5);
+    font-size: 2vw;
+    font-weight: bolder;
+  }
+  .div1a .spanB {
+    font-family: "Karla", sans-serif;
+    color: rgba(225, 225, 225, 0.7);
+    font-size: 2vw;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .div1a .spanC {
+    font-family: "Karla", sans-serif;
+    color: rgba(225, 225, 225, 0.7);
+    font-size: 2vw;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #juju {
+    display: inline-block;
+    position: absolute;
+    width: 90vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 3vw;
+    top: -8.5vh;
+  }
+  #juju .sen {
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    text-decoration-color: darkolivegreen;
+    text-decoration-thickness: 3px;
+  }
+  .Nav {
+    width: 70vw;
+    text-shadow: 2px 32px 32px black;
+    position: absolute;
+    top: 10vh;
+    display: inline-block;
+    margin-left: 50px;
+    border: 0px white solid;
+    background-color: none;
+    font-size: 2vw;
+  }
+  .facebook {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+    text-align: left;
+    background-color: none;
+    border-radius: 50%;
+    font-weight: bolder;
+  }
+  .facebook:active {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .facebook:hover {
+    background-color: rgb(11, 11, 175);
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  #twitter {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #twitter:active {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #twitter:hover {
+    color: rgb(29, 161, 242);
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #insta {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 70px;
+    text-shadow: 2px 2px 2px black;
+  }
+  #insta:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 70px;
+  }
+  #wassap {
+    color: aliceblue;
+    border-radius: 50%;
+    text-shadow: 0px 2px 2px black;
+  }
+  #probs {
+    color: white;
+    margin-left: 10px;
+    font-size: 30px;
+    border: 0px brown solid;
+    border-radius: 50%;
+    background-color: none;
+    width: 30px;
+    height: 30px;
+    text-shadow: 2px 2px 2px grey;
+  }
+  #probs:hover {
+    color: white;
+    background-color: purple;
+    font-size: 30px;
+    border: 0px brown solid;
+    border-radius: 50%;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+  }
+  #roll {
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #roll:hover {
+    color: #f09433;
+  }
+  #nav {
+    text-shadow: 2px 2px 2px black;
+  }
+  .or {
+    position: relative;
+    display: inline-block;
+    visibility: hidden;
+    left: 2%;
+    font-family: "Changa", sans-serif;
+    list-style: none;
+    border-radius: 0px;
+    display: inline-block;
+    background-color: green;
+    text-shadow: 1px 1px 1px grey;
+    top: -20vh;
+  }
+  .or .list {
+    float: left;
+    margin-right: 0px;
+    font-family: "Changa", sans-serif;
+    font-size: 20px;
+    color: rgba(110, 110, 110, 0.5);
+  }
+  .or .list a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  .or .list a:active {
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  .or .list a:hover {
+    margin-left: 15px;
+  }
+  .or .list:hover {
+    float: left;
+    margin-right: 0px;
+    font-family: "Changa", sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: red;
   }
 }
 @media only screen and (min-width: 900px) {
+  #pint {
+    visibility: hidden;
+  }
   .div1 {
     position: absolute;
     width: 100%;
